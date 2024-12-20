@@ -1,12 +1,12 @@
 import useData from "./useData";
 
-export interface Platform {
+interface Platform {
   id: number;
   name: string;
   slug: string;
 }
 
-export interface Game {
+interface Game {
   id: number;
   name: string;
   background_image: string;
