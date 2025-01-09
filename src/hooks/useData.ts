@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AxiosRequestConfig, CanceledError } from "axios";
 import apiClient from "../services/api-client";
 
-interface FetchData<T> {
+interface FetchResponse<T> {
   count: number;
   results: T[];
 }
@@ -22,7 +22,7 @@ const useData = <T>(
 
       setLoading(true);
       apiClient
-        .get<FetchData<T>>(endpoint, {
+        .get<FetchResponse<T>>(endpoint, {
           signal: controller.signal,
           ...requestConfig,
         })
