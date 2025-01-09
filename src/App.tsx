@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar";
 import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
 import { Genre } from "./hooks/useGenres";
-import { Platform } from "./hooks/useGames";
+import { Platform } from "./hooks/usePlatforms";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -16,7 +16,7 @@ export interface GameQuery {
   searchText: string;
 }
 
-const App = () => {
+function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
   return (
@@ -49,17 +49,17 @@ const App = () => {
           <Flex marginBottom={5}>
             <Box marginRight={5}>
               <PlatformSelector
+                selectedPlatform={gameQuery.platform}
                 onSelectPlatform={(platform) =>
                   setGameQuery({ ...gameQuery, platform })
                 }
-                selectedPlatform={gameQuery.platform}
               />
             </Box>
             <SortSelector
+              sortOrder={gameQuery.sortOrder}
               onSelectSortOrder={(sortOrder) =>
                 setGameQuery({ ...gameQuery, sortOrder })
               }
-              sortOrder={gameQuery.sortOrder}
             />
           </Flex>
         </Box>
@@ -67,6 +67,6 @@ const App = () => {
       </GridItem>
     </Grid>
   );
-};
+}
 
 export default App;
