@@ -4,8 +4,8 @@
 
 ## 🚀 Live Demo
 
-<a href="https://game-hub-eb.com" target="_blank" rel="noopener noreferrer">**Game Hub App**</a>
-<a href="https://github.com/eborjiantech/game-hub" target="_blank" rel="noopener noreferrer">**GitHub Repository**</a>
+[**Game Hub App**](https://game-hub-eb.com)  
+[**GitHub Repository**](https://github.com/eborjiantech/game-hub)
 
 ## ✨ Features
 
@@ -13,7 +13,7 @@
 
 - **Game Discovery:**
 
-  - Search, filter, sort, and view video games with data powered by the <a href="https://rawg.io/apidocs" target="_blank" rel="noopener noreferrer">RAWG Video Games Database API</a>.
+  - Search, filter, sort, and view video games with data powered by the [RAWG Video Games Database API](https://rawg.io/apidocs).
   - Game cards dynamically display images, platform icons, critic scores, and emojis based on ratings.
 
 - **Game Details:**
@@ -120,5 +120,5 @@ npm run dev
 
 ## ⚠️ Disclaimer
 
-- This application was created for learning purposes and is inspired by <a href="https://rawg.io" target="_blank" rel="noopener noreferrer">RAWG</a>, a video game discovery site that allows users to browse and discover games. RAWG also provides developers access to its extensive database of over 500,000 video games.
+- This application was created for learning purposes and is inspired by [RAWG](https://rawg.io), a video game discovery site that allows users to browse and discover games. RAWG also provides developers access to its extensive database of over 500,000 video games.
 - This project is not affiliated with RAWG and is not intended for commercial use or distribution.
